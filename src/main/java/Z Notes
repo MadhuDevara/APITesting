@@ -1,0 +1,88 @@
+What are Different Types of Protocols Used in API Testing?
+
+APIs can communicate over various protocols, depending on the use case and environment.
+
+Common Protocols:
+    • HTTP/HTTPS: The most commonly used protocols for web APIs.
+    • SOAP: A protocol used for exchanging structured information, often in enterprise
+    environments.
+    • REST: Architectural style using HTTP/HTTPS. It is not a protocol itself but often relies on
+    HTTP/HTTPS.
+    • gRPC: A high-performance RPC framework using HTTP/2.
+    • MQTT: A lightweight messaging protocol used in IoT.
+    • AMQP: Advanced Message Queuing Protocol, often used in messaging systems.
+
+6. What Types of Testing Can We Perform in API Testing?
+    API testing involves several types of tests to ensure the API functions correctly under different
+    conditions.
+    Types of Testing:
+    • Functional Testing: Verifying that the API functions as expected with correct input.
+    • Integration Testing: Testing the API's interaction with other APIs or services.
+    • Performance Testing: Checking the API's responsiveness, throughput, and stability under
+    load.
+    • Security Testing: Ensuring that the API is secure and handles authentication,
+    authorization, and data encryption correctly.
+    • Negative Testing: Validating how the API handles invalid inputs or scenarios.
+    • Boundary Testing: Testing the API with boundary values (e.g., maximum, minimum).
+
+What are Different Types of Protocols Used in API Testing?
+
+APIs can be built using different communication protocols, each with its own use cases,
+advantages, and limitations.
+Common Protocols in API Testing:
+    1. HTTP/HTTPS (Hypertext Transfer Protocol/Secure):
+        o The most widely used protocol for web APIs.
+        o HTTP is an application layer protocol for transmitting hypertext.
+        o HTTPS is HTTP with encryption, using SSL/TLS for secure communication.
+        o Used for RESTful services.
+    2. SOAP (Simple Object Access Protocol):
+        o A protocol for exchanging structured information in web services.
+        o Relies on XML-based messaging.
+        o Known for its robustness and security features.
+        o Commonly used in enterprise applications.
+    3. gRPC (gRPC Remote Procedure Calls):
+        o A high-performance, open-source RPC framework.
+        o Uses HTTP/2 for transport, Protocol Buffers (Protobuf) for serialization.
+        o Ideal for microservices communication due to its efficiency.
+    4. MQTT (Message Queuing Telemetry Transport):
+        o A lightweight messaging protocol often used in IoT (Internet of Things)
+        applications.
+        o Works on a publish-subscribe model, efficient for resource-constrained devices.
+    5. AMQP (Advanced Message Queuing Protocol):
+        o A protocol for message-oriented middleware.
+        o Provides message queuing, publish/subscribe, and routing capabilities.
+        o Commonly used in systems requiring high reliability and speed.
+
+    11. What Types of Testing Can We Perform in API Testing?
+        API testing encompasses several types of tests, each focusing on different aspects of the API’s
+        behavior and performance.
+
+    Types of Testing in API Testing:
+    1. Functional Testing:
+        o Verifies that the API functions as expected.
+        o Checks if the API correctly processes inputs and returns the correct outputs.
+        o Example: Sending a valid request to an API and ensuring the correct response is
+        received.
+    2. Integration Testing:
+        o Ensures that different components of an application work together as expected.
+        o Involves testing APIs in conjunction with other services or APIs.
+        o Example: Testing a payment API integrated with a third-party service.
+    3. Performance Testing:
+        o Assesses the API's responsiveness, stability, and throughput under load.
+        o Includes Load Testing (normal load) and Stress Testing (beyond normal load).
+        o Example: Sending a large number of requests to an API to see how it handles the
+        load.
+    4. Security Testing:
+        o Ensures the API is secure against threats such as unauthorized access, data leaks,
+        and SQL injection.
+        o Involves testing authentication, authorization, data encryption, and other
+        security features.
+        o Example: Attempting to access protected resources without proper
+        authentication.
+    5. Negative Testing:
+        o Validates how the API handles invalid inputs or unexpected conditions.
+        o Example: Sending a request with missing required parameters and ensuring the
+        API returns an appropriate error.
+    6. Boundary Testing:
+        o Tests the limits or boundaries of the API's input values.
+        o Example: Testing the maximum and minimum values for numeric inputs.
