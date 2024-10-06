@@ -1,0 +1,69 @@
+Certainly! Here is a list of HTTP status codes along with their reasons and typical uses:
+1xx: Informational
+100 Continue: The client can continue with its request.
+101 Switching Protocols: The server is switching protocols as requested by the client.
+2xx: Successful
+200 OK: The request was successful.
+201 Created: The request was successful, and a new resource was created.
+202 Accepted: The request has been accepted for processing, but processing is not complete.
+203 Non-Authoritative Information: The request was successful, but the information may come from a third party.
+204 No Content: The server successfully processed the request, but there's no content to return.
+205 Reset Content: The server successfully processed the request, but there’s no content to return, and the user agent should reset the view.
+206 Partial Content: The server is delivering only part of the resource due to a range header sent by the client.
+3xx: Redirection
+300 Multiple Choices: There are multiple options that the client can follow.
+301 Moved Permanently: The resource has permanently moved to a new URI.
+302 Found: The resource has temporarily moved to a different URI.
+303 See Other: The response indicates that the client should fetch the resource from another URI using a GET request.
+304 Not Modified: The resource has not been modified since the last request.
+305 Use Proxy (Deprecated): The resource must be accessed through the proxy given by the Location field.
+307 Temporary Redirect: The resource resides temporarily at a different URI, and the client should continue to use the original URI.
+308 Permanent Redirect: The resource has been permanently moved to the URI provided in the Location header.
+4xx: Client Errors
+400 Bad Request: The server could not understand the request due to invalid syntax.
+401 Unauthorized: The client must authenticate itself to get the requested response.
+402 Payment Required (Experimental): Reserved for future use.
+403 Forbidden: The client does not have permission to access the resource.
+404 Not Found: The server cannot find the requested resource.
+405 Method Not Allowed: The request method is known by the server but has been disabled and cannot be used.
+406 Not Acceptable: The server cannot produce a response matching the list of acceptable values defined in the request's headers.
+407 Proxy Authentication Required: The client must first authenticate itself with the proxy.
+408 Request Timeout: The server would like to shut down this unused connection.
+409 Conflict: The request conflicts with the current state of the server.
+410 Gone: The resource requested is no longer available and will not come back.
+411 Length Required: The request did not specify the length of its content, which is required by the resource.
+412 Precondition Failed: The server does not meet one of the preconditions that the requester put on the request.
+413 Payload Too Large: The request entity is larger than limits defined by server; the server may close the connection or return a Retry-After header field.
+414 URI Too Long: The URI requested by the client is longer than the server is willing to interpret.
+415 Unsupported Media Type: The media format of the requested data is not supported by the server.
+416 Range Not Satisfiable: The range specified by the Range header field in the request cannot be fulfilled.
+417 Expectation Failed: The server cannot meet the requirements of the Expect request-header field.
+418 I'm a teapot (RFC 2324): A humorous response code defined in 1998.
+421 Misdirected Request: The request was directed at a server that is not able to produce a response.
+422 Unprocessable Entity: The request was well-formed but unable to be followed due to semantic errors.
+423 Locked: The resource that is being accessed is locked.
+424 Failed Dependency: The request failed due to failure of a previous request.
+426 Upgrade Required: The client should switch to a different protocol.
+428 Precondition Required: The server requires the request to be conditional.
+429 Too Many Requests: The user has sent too many requests in a given amount of time.
+431 Request Header Fields Too Large: The server is unwilling to process the request because its header fields are too large.
+451 Unavailable For Legal Reasons: The user requested a resource that is not available due to legal reasons.
+5xx: Server Errors
+500 Internal Server Error: The server has encountered a situation it does not know how to handle.
+501 Not Implemented: The request method is not supported by the server and cannot be handled.
+502 Bad Gateway: The server was acting as a gateway and received an invalid response from an upstream server.
+503 Service Unavailable: The server is not ready to handle the request.
+504 Gateway Timeout: The server was acting as a gateway and did not receive a timely response from an upstream server.
+505 HTTP Version Not Supported: The HTTP version used in the request is not supported by the server.
+506 Variant Also Negotiates: The server has an internal configuration error.
+507 Insufficient Storage: The server is unable to store the representation needed to complete the request.
+508 Loop Detected: The server detected an infinite loop while processing the request.
+510 Not Extended: Further extensions to the request are required for the server to fulfill it.
+511 Network Authentication Required: The client needs to authenticate to gain network access.
+Usage Summary
+Informational Codes (1xx): Indicate that the request was received and understood, and the client should continue to request.
+Successful Codes (2xx): Indicate that the request was successfully received, understood, and accepted.
+Redirection Codes (3xx): Indicate that further action needs to be taken by the user agent to fulfill the request.
+Client Error Codes (4xx): Indicate error cases due to the client’s request.
+Server Error Codes (5xx): Indicate error cases where the server failed to fulfill a valid request.
+This list should help you understand the purpose of each HTTP status code and how or when to use them.

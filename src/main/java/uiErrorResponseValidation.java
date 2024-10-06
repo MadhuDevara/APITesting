@@ -1,11 +1,25 @@
+// 1.How do you validate and differentiate UI error responses and API error responses ?
+//      To validate and differentiate UI error responses and API error responses, you'll need to
+//      understand the differences in how these responses are delivered and how they should be
+//      handled in automation testing. Let's break it down:
+
+//1.1 UI Error Responses:
+//• Nature: UI error responses are presented directly on the user interface. They may
+//      appear as pop-ups, error messages, or other visual elements like warnings or red
+//      banners.
+//• Validation: To validate these errors using automation tools like Selenium, you would
+//      typically interact with the UI elements where the error messages are displayed.
+
+//Example: Validating a UI Error Response in Selenium (Java)
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class APIT1 {
+public class uiErrorResponseValidation {
 
-    public static class UIErrorResponseValidation {
+    public static class uierrorresponsevalidation {
         public static void main(String[] args) {
             // Initialize WebDriver
             ChromeDriver driver = new ChromeDriver();
